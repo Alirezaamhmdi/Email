@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.email.NewAccount">
+   <children>
+      <Label layoutX="125.0" layoutY="35.0" text="New Account">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="122.0" text="FirstName : " />
+      <Label layoutX="81.0" layoutY="171.0" text="LastName : " />
+      <Label layoutX="102.0" layoutY="218.0" text="Email : " />
+      <Label layoutX="83.0" layoutY="265.0" text="Password :" />
+      <TextField fx:id="textField_firstName" layoutX="148.0" layoutY="118.0" />
+      <TextField fx:id="textField_lastName" layoutX="148.0" layoutY="168.0" />
+      <TextField fx:id="textField_Email" layoutX="148.0" layoutY="215.0" />
+      <TextField fx:id="textField_password" layoutX="148.0" layoutY="261.0" />
+      <Button layoutX="306.0" layoutY="337.0" mnemonicParsing="false" onAction="#save" prefHeight="30.0" prefWidth="50.0" text="Save" />
+      <Button layoutX="56.0" layoutY="337.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="50.0" text="Back" />
+   </children>
+</Pane>

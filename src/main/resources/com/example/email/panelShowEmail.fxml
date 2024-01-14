@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.stage.*?>
+
+<Stage fx:id="stage" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.email.ShowEmail">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="429.0" prefWidth="332.0">
+            <children>
+               <Label layoutX="31.0" layoutY="23.0" text="Email : " />
+               <Label layoutX="29.0" layoutY="79.0" text="Title : " />
+               <Label layoutX="31.0" layoutY="182.0" text="Text :" />
+                <Label layoutX="31.0" layoutY="130.0" text="Date :" />
+               <TextArea fx:id="textArea_text" editable="false" layoutX="31.0" layoutY="201.0" prefHeight="180.0" prefWidth="268.0" />
+               <Button layoutX="258.0" layoutY="392.0" mnemonicParsing="false" onAction="#close" text="Close " />
+               <TextField fx:id="textField_title" editable="false" layoutX="30.0" layoutY="96.0" prefHeight="26.0" prefWidth="271.0" />
+               <TextField fx:id="textField_email" editable="false" layoutX="29.0" layoutY="48.0" prefHeight="26.0" prefWidth="271.0" />
+                <TextField fx:id="textField_date" editable="false" layoutX="30.0" layoutY="148.0" prefHeight="26.0" prefWidth="271.0" />
+               <CheckBox fx:id="checkBox_important" layoutX="28.0" layoutY="396.0" mnemonicParsing="false" onAction="#checkBoxAction" text="Important" />
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>
